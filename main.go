@@ -14,7 +14,7 @@ import (
 func main() {
 	fmt.Println("Ready to compile ...")
 	
-	filename, _ := filepath.Abs("app.yaml")
+	filename, _ := filepath.Abs("app-staging.yaml")
 	yamlFile, err := ioutil.ReadFile(filename)
 	if err != nil {
 		panic(err)
