@@ -57,7 +57,7 @@ func main() {
 
 	out, err := yaml.Marshal(mapResult)
 	// write the whole body at once
-	err = ioutil.WriteFile("app.yaml", out, 0644)
+	err = ioutil.WriteFile("app-staging.yaml", out, 0644)
 	if err != nil {
 		panic(err)
 	}
